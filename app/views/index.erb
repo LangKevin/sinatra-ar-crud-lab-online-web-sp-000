@@ -1,1 +1,7 @@
 <h1>Articles</h1>
+<% @articles.each do |article| %>
+  <div class="article">
+    <p>Title: <%= article.name %></p><br>
+    <p>Content: <%= article.topic %></p><br>
+  </div><br>
+<% end %>
