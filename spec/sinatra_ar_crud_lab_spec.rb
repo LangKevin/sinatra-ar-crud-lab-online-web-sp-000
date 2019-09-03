@@ -72,20 +72,20 @@ describe "Magazine App" do
   end
 
 
-  # describe "update action" do
-  #
-  #
-  #   it 'responds with a 200 status code' do
-  #     get "/articles/#{@article2.id}/edit"
-  #     expect(last_response.status).to eq(200)
-  #   end
-  #
-  #   it 'displays the existing object in the edit form' do
-  #     visit "/articles/#{@article2.id}/edit"
-  #     expect(page.body).to include("#{@article2.title}")
-  #     expect(page.body).to include("#{@article2.content}")
-  #
-  #   end
+  describe "update action" do
+
+
+    it 'responds with a 200 status code' do
+      get "/articles/#{@article2.id}/edit"
+      expect(last_response.status).to eq(200)
+    end
+
+    it 'displays the existing object in the edit form' do
+      visit "/articles/#{@article2.id}/edit"
+      expect(page.body).to include("#{@article2.title}")
+      expect(page.body).to include("#{@article2.content}")
+
+    end
   #
   #   it "saves edits to an article" do
   #     visit "/articles/#{@article2.id}/edit"
