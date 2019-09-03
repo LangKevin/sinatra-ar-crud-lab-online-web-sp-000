@@ -33,7 +33,7 @@ class ApplicationController < Sinatra::Base
 
     @article = Article.find(params[:id])
     # binding.pry
-    erb :show
+    erb :edit
 
   end
   post '/articles' do
