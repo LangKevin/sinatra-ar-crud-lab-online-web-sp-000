@@ -23,10 +23,11 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/articles/:id' do
-    @article = Article.find[params[:id]]
 binding.pry
+    @article = Article.find[params[:id]]
+
     erb :show
-    
+
   end
   post '/articles' do
     @article = Article.create(params)
